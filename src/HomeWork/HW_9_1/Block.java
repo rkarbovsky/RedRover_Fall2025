@@ -3,7 +3,8 @@ package HomeWork.HW_9_1;
 //Write a class Block that creates a block (Duh..)
 //
 //Requirements
-//The constructor should take an array as an argument, this will contain 3 integers of the form [width, length, height] from which the Block should be created.
+//The constructor should take an array as an argument, this will contain 3 integers of the form [width, length, height]
+//from which the Block should be created.
 //
 //Define these methods:
 //
@@ -17,7 +18,8 @@ package HomeWork.HW_9_1;
 //
 //`getSurfaceArea()` return the surface area of the `Block`
 //Examples
-//    Block b = new Block(new int[]{2,4,6}) -> creates a `Block` object with a width of `2` a length of `4` and a height of `6`
+//Block b = new Block(new int[]{2,4,6}) -> creates a `Block` object with
+//a width of `2` a length of `4` and a height of `6`
 //    b.getWidth() // -> 2
 //
 //    b.getLength() // -> 4
@@ -38,6 +40,12 @@ public class Block {
     int width, length, height, volume, surfaceArea;
 
     int[] Block = new int[3];
+
+    public Block(int width, int length, int height) {
+        this.width = width;
+        this.length = length;
+        this.height = height;
+    }
 
     public void block() {
         Block[0] = getWidth();
